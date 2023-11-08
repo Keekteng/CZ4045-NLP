@@ -59,29 +59,6 @@ def getCasing(word, caseLookup):
     return caseLookup[casing]
 
 
-
-# def batchDataset(data):
-#     l = []
-#     for i in data:
-#         l.append(len(i[0]))
-#     l = set(l)
-#     batches = []
-#     batch_len = []
-#     z = 0
-#     for i in l:
-#         for batch in data:
-#             if len(batch[0]) == i:
-#                 batches.append(batch)
-#                 z += 1
-#         batch_len.append(z)
-#     return batches,batch_len
-
-# def split_batch(dataset,batch_size):
-#     batch_dataset = []
-#     for i in range(0, len(dataset), batch_size):
-#         batch_dataset.append(dataset[i:i + batch_size])
-#     return batch_dataset
-
 def batchGenerator(dataset,batch_size):
     batch_dataset = []
     for i in range(0, len(dataset), batch_size):
@@ -149,25 +126,6 @@ def createMatrices(sentences, word2Idx, label2Idx, case2Idx, char2Idx):
 
     return dataset
 
-
-# def iterate_minibatches(dataset, batch_len):
-#     start = 0
-#     for i in batch_len:
-#         words = []
-#         chars = []
-#         caseing = []
-#         labels = []
-#         mini_batch_data = dataset[start:i]
-#         start = i
-#         for data in mini_batch_data:
-#             word, case, char, label = data
-#             # label = np.expand_dims(label, -1)
-#             words.append(word)
-#             caseing.append(case)
-#             chars.append(char)
-#             labels.append(label)
-        
-#         yield np.asarray(words), np.asarray(caseing), np.asarray(chars),np.asarray(labels)     
 
 
 # returns data with character information in format
