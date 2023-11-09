@@ -19,3 +19,5 @@
             - Load the Weight of the best model and Predict on Test set
             - Total Run Time section shows the total training time --> calculated by summing up time taken for each epoch till early stopping
             - Plotted the dev f1 score against epoch until early stopping
+
+3. model.png is an image of the model architecture for Qns 1 generated from Part_1.ipynb
