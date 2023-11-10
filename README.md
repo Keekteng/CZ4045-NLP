@@ -3,7 +3,7 @@
 Note: Helper functions required in Part_1.ipynb are in part_1_utils.py only while functions required in Part_2.ipynb are in part_2_utils.py only.
 
 
-PART 1:
+## PART 1:
 
 Part_1.ipynb implements the Sequence Tagging (Named Entity Recognition) classifier using pre-trained word embeddings.
 
@@ -28,10 +28,9 @@ Following are the instructions and explanations of sample output after running t
             - Output total run time, calculated by summing up time taken for each epoch till early stopping
             - Plotted the dev f1 score against epoch until early stopping
 
-model.png is an image of the model architecture for Qns 1 generated from Part_1.ipynb
 
 
-PART 2:
+## PART 2:
 
 Part_2.ipynb implements the sentence-level categorisation using question classification. 
 
