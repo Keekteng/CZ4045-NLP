@@ -77,13 +77,6 @@ def batchGenerator(dataset,batch_size):
             batch_labels.append(labels)
         yield np.asarray(batch_words),np.asarray(batch_cases),np.asarray(batch_chars),np.asarray(batch_labels)
 
-def predict_on_test(model,test_dataset):
-    for sentence in test_dataset:
-        words,cases,chars,labels = sentence
-        model.predict()
-
-    
-
 
 
 # returns matrix with 1 entry = list of 4 elements:

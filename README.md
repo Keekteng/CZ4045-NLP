@@ -15,12 +15,12 @@ Part_1.ipynb TLDR
             - Provided search space for selected hyperparameters
             - Used Tree Parzen Estimator(optimization algorithm) and Hyperband Pruning (pruning method)
             - Made use of optuna visualisation package to further guide selection of best model
+            - Load the cnn_blstm.db to replicate my tuning process results from optuna
         - Training Best Model Section
             - Apply the best hyperparameter settings based on findings from Tuning section
             - Apply early stopping mechanism to stop training once f1 score for dev set stops increasing for certain number of epoch
-            - Save the best model weights (highest f1 score dev) in the directory /model_weights
         - Results section
-            - Load the Weight of the best model and Predict on Test set
+            - Predict on Test set
             - Total Run Time section shows the total training time --> calculated by summing up time taken for each epoch till early stopping
             - Plotted the dev f1 score against epoch until early stopping
 
