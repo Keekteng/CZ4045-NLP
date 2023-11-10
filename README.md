@@ -62,7 +62,4 @@ Following are the instructions and explanations of sample output after running t
     2.3) Model evaluation
         - Create test_dataloader for evaluation of the trained model
         - Output is the test accuracy based on the best_max_pool_lstm model
-    2.4) Saving best model weights
-        - Save the best model as a python object using pickle library
-        - The model is also loaded into loaded_model which outputs the details of the BiLSTM model used
-        - Due to size of the weights of the model, it is not uploaded into the zip file containing the source code
+
