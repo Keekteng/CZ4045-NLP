@@ -2,8 +2,11 @@
 
 Note: Helper functions required in Part_1.ipynb are in part_1_utils.py only while functions required in Part_2.ipynb are in part_2_utils.py only.
 
+
 PART 1:
-2. Part_1.ipynb TLDR 
+
+Part_1.ipynb TLDR
+
     - Organised according to question format in Assignment docs
     - For Qns 1.1 and 1.2 Simply run the notebook in sequence to replicate the results
     - Qns 1.3
@@ -21,12 +24,15 @@ PART 1:
             - Total Run Time section shows the total training time --> calculated by summing up time taken for each epoch till early stopping
             - Plotted the dev f1 score against epoch until early stopping
 
-3. model.png is an image of the model architecture for Qns 1 generated from Part_1.ipynb
+model.png is an image of the model architecture for Qns 1 generated from Part_1.ipynb
+
 
 PART 2:
+
 This part implements the sentence-level categorisation using question classification. 
 
 Following are the instructions and explanations of sample output after running the different sections of the code:
+
     1) Reading dataset, re-classifying classes and splitting to train and dev set
         - Read the train and test dataset using pandas library
         - Drop the unnecessary columns and combine 2 classes randomly to form one new label
