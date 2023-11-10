@@ -5,23 +5,27 @@ Note: Helper functions required in Part_1.ipynb are in part_1_utils.py only whil
 
 PART 1:
 
-Part_1.ipynb TLDR
+Part_1.ipynb implements the Sequence Tagging (Named Entity Recognition) classifier using pre-trained word embeddings.
 
-    - Organised according to question format in Assignment docs
-    - For Qns 1.1 and 1.2 Simply run the notebook in sequence to replicate the results
-    - Qns 1.3
-        - First Section is for Defining Model Architecture --> CNN-BLSTM
-        - NOTE that "Tuning" section of notebook takes a few days to run
-            - Provided search space for selected hyperparameters
-            - Used Tree Parzen Estimator(optimization algorithm) and Hyperband Pruning (pruning method)
+Following are the instructions and explanations of sample output after running the different sections of the code:
+
+    1) Question 1.1 and 1.2
+        - Use word2vec pre-trained embeddings to answer ouput the word and cosine similarity
+        - Read the training, development and test file and return the count of the number of sentences in each file
+        - Create function to ouput all named_entities in the sentences
+    2) Question 1.3
+        - Defining model architecture
+        - Tuning with Optuna (takes a few days to run)
+            - Provide search space for selected hyperparameters
+            - Use Tree Parzen Estimator(optimization algorithm) and Hyperband Pruning (pruning method)
             - Made use of optuna visualisation package to further guide selection of best model
-            - Load the cnn_blstm.db to replicate my tuning process results from optuna
+            - Load the cnn_blstm.db to replicate tuning process results from optuna
         - Training Best Model Section
             - Apply the best hyperparameter settings based on findings from Tuning section
             - Apply early stopping mechanism to stop training once f1 score for dev set stops increasing for certain number of epoch
-        - Results section
-            - Predict on Test set
-            - Total Run Time section shows the total training time --> calculated by summing up time taken for each epoch till early stopping
+        - Results
+            - Predict on test set and output the f1 test score
+            - Output total run time, calculated by summing up time taken for each epoch till early stopping
             - Plotted the dev f1 score against epoch until early stopping
 
 model.png is an image of the model architecture for Qns 1 generated from Part_1.ipynb
@@ -29,7 +33,7 @@ model.png is an image of the model architecture for Qns 1 generated from Part_1.
 
 PART 2:
 
-This part implements the sentence-level categorisation using question classification. 
+Part_2.ipynb implements the sentence-level categorisation using question classification. 
 
 Following are the instructions and explanations of sample output after running the different sections of the code:
 
